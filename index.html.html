@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDELSTAL | Prémiové apartmány pri Bratislave</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+  <!-- Navigácia -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <i class="fa-solid fa-gem text-emerald-600 text-lg"></i>
+        <span class="font-extrabold text-xl tracking-tight text-slate-900">EDELSTAL</span>
+      </div>
+      <nav class="hidden md:flex space-x-6 text-sm font-medium text-slate-600">
+        <a href="#galeria" class="hover:text-emerald-600 transition">Galéria & Pôdorys</a>
+        <a href="#tabulky" class="hover:text-emerald-600 transition">Výmery bytov</a>
+        <a href="#standard" class="hover:text-emerald-600 transition">Štandard na kľúč</a>
+        <a href="#poplatky" class="hover:text-emerald-600 transition">Poplatky & Hypo</a>
+        <a href="#kontakt" class="hover:text-emerald-600 transition">Kontakt</a>
+      </nav>
+      <a href="https://wa.me/421951778117?text=Dobry%20den,%20mam%20zaujem%20o%20obhliadku%20bytu%20v%20Edelstale." 
+         target="_blank" 
+         class="inline-flex items-center space-x-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs md:text-sm font-semibold px-4 py-2 rounded-lg shadow-sm transition">
+        <i class="fa-brands fa-whatsapp text-lg"></i>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero sekcia -->
+  <section class="py-10 md:py-14 bg-gradient-to-b from-slate-100 to-slate-50 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 md:flex items-center justify-between gap-10">
+      <div class="md:w-7/12">
+        <span class="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3">
+          Rakúsko · Edelstal (15 min od Bratislavy)
+        </span>
+        <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+          Prémiové 3-izbové prízemné apartmány s terasou a predzáhradkou
+        </h1>
+        <p class="mt-4 text-slate-600 text-sm md:text-base leading-relaxed">
+          Kompaktný komorný projekt v pokojnom prostredí rakúskych viníc s výbornou dostupnosťou do Bratislavy aj Viedne. Ku každému bytu prislúcha terasa, súkromná záhrada, pivničná kobka a 2 vyhradené parkovacie miesta.
+        </p>
+
+        <div class="mt-6 flex flex-wrap gap-3 text-xs md:text-sm font-semibold text-slate-700">
+          <div class="flex items-center space-x-2 bg-white px-3.5 py-2 rounded-xl border border-slate-200 shadow-sm">
+            <i class="fa-solid fa-ruler-combined text-emerald-600"></i>
+            <span>Plocha: 78,31 m² a 84,57 m²</span>
+          </div>
+          <div class="flex items-center space-x-2 bg-white px-3.5 py-2 rounded-xl border border-slate-200 shadow-sm">
+            <i class="fa-solid fa-tree text-emerald-600"></i>
+            <span>Vlastná predzáhradka</span>
+          </div>
+          <div class="flex items-center space-x-2 bg-white px-3.5 py-2 rounded-xl border border-slate-200 shadow-sm">
+            <i class="fa-solid fa-car text-emerald-600"></i>
+            <span>2 parkovacie miesta v cene</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Karta ponuky -->
+      <div class="mt-8 md:mt-0 md:w-5/12 bg-white p-6 md:p-7 rounded-2xl border border-slate-200 shadow-sm">
+        <span class="text-xs font-bold uppercase tracking-wide text-slate-400">Dostupné jednotky v projekte</span>
+        <div class="text-3xl font-black text-slate-900 mt-1">2 voľné byty</div>
+        <div class="text-xs text-emerald-700 font-semibold mt-1">Kompletný právny a cezhraničný servis zabezpečený</div>
+        <hr class="my-4 border-slate-100">
+        <ul class="space-y-2.5 text-xs md:text-sm text-slate-600">
+          <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2.5"></i> <strong>1. Byt:</strong> 78,31 m² + 14,8 m² terasa</li>
+          <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2.5"></i> <strong>2. Byt:</strong> 84,57 m² + 14,8 m² terasa</li>
+          <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2.5"></i> V cene: apartmán, terasa, záhrada, 2x parking, pivnica</li>
+        </ul>
+        <a href="#kontakt" class="mt-6 w-full block text-center bg-slate-900 hover:bg-slate-800 text-white font-semibold py-3 rounded-xl transition text-sm shadow">
+          Dohodnúť obhliadku
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fotogaléria з точними розширеннями файлів -->
+  <section id="galeria" class="py-10 max-w-6xl mx-auto px-4">
+    <div class="flex items-end justify-between mb-4">
+      <div>
+        <span class="text-emerald-600 font-bold text-xs uppercase tracking-wider">Fotogaléria & Pôdorys</span>
+        <h2 class="text-2xl font-bold text-slate-900">Prehľad projektu a vizualizácie</h2>
+      </div>
+      <button onclick="openGallery(0)" class="hidden sm:inline-flex items-center space-x-2 text-xs font-semibold text-slate-700 bg-white border border-slate-300 hover:bg-slate-50 px-3.5 py-2 rounded-lg transition shadow-sm">
+        <i class="fa-solid fa-images text-emerald-600"></i>
+        <span>Zobraziť všetkých 10 fotografií</span>
+      </button>
+    </div>
+
+    <!-- Розкладка колажу -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-3 h-[420px] md:h-[480px]">
+      
+      <!-- 1. Фасад (exterier.jpg) -->
+      <div class="md:col-span-2 relative h-full rounded-2xl overflow-hidden cursor-pointer group shadow-sm border border-slate-200" onclick="openGallery(0)">
+        <img src="exterier.jpg" alt="Exteriér domu" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition"></div>
+      </div>
+
+      <!-- 2. Креслення проєкту (vykres.png) -->
+      <div class="relative h-full rounded-2xl overflow-hidden cursor-pointer group shadow-sm border border-slate-200 bg-white" onclick="openGallery(1)">
+        <img src="vykres.png" alt="Pôdorys stavby" class="w-full h-full object-contain p-2 group-hover:scale-105 transition duration-500">
+        <span class="absolute bottom-2.5 left-2.5 bg-slate-900/80 text-white text-[11px] font-medium px-2.5 py-1 rounded-md">Pôdorys</span>
+      </div>
+
+      <!-- Правий стовпчик -->
+      <div class="grid grid-rows-2 gap-3 h-full">
+        <!-- 3. Вітальня (obyvacka1.png) -->
+        <div class="relative h-full rounded-2xl overflow-hidden cursor-pointer group shadow-sm border border-slate-200" onclick="openGallery(2)">
+          <img src="obyvacka1.png" alt="Obývacia izba" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+        </div>
+
+        <!-- 4. Ванна (bath1.png) з плашкою для відкриття інших фото -->
+        <div class="relative h-full rounded-2xl overflow-hidden cursor-pointer group shadow-sm border border-slate-200" onclick="openGallery(4)">
+          <img src="bath1.png" alt="Kúpeľňa" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <div class="absolute inset-0 bg-slate-900/50 group-hover:bg-slate-900/60 transition flex flex-col items-center justify-center text-white p-2 text-center">
+            <i class="fa-solid fa-camera text-xl mb-1"></i>
+            <span class="text-xs font-bold uppercase tracking-wider">+6 fotografií</span>
+            <span class="text-[10px] text-slate-300">kuchyňa, interiér a detaily</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <button onclick="openGallery(0)" class="sm:hidden mt-3 w-full inline-flex items-center justify-center space-x-2 text-xs font-semibold text-slate-700 bg-white border border-slate-300 py-2.5 rounded-xl transition">
+      <i class="fa-solid fa-images text-emerald-600"></i>
+      <span>Otvoriť celú galériu (10 fotografií)</span>
+    </button>
+  </section>
+
+  <!-- Таблиця параметрів двох квартир -->
+  <section id="tabulky" class="py-12 bg-white border-y border-slate-200">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto mb-8">
+        <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Podrobná výmera miestností oboch bytov</h2>
+        <p class="text-sm text-slate-500 mt-1">Presné parametre jednotlivých miestností podľa realizačnej projektovej dokumentácie.</p>
+      </div>
+
+      <div class="overflow-x-auto rounded-xl border border-slate-200 shadow-sm">
+        <table class="w-full text-left border-collapse bg-white">
+          <thead>
+            <tr class="bg-slate-100 text-slate-700 text-xs md:text-sm uppercase tracking-wider border-b border-slate-200">
+              <th class="py-3.5 px-4 md:px-6">Miestnosť / Položka</th>
+              <th class="py-3.5 px-4 md:px-6 bg-emerald-50/70 text-emerald-950 font-bold border-l border-slate-200">
+                1. Byt
+              </th>
+              <th class="py-3.5 px-4 md:px-6 bg-slate-50 font-bold border-l border-slate-200">
+                2. Byt
+              </th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 text-sm">
+            <tr class="hover:bg-slate-50">
+              <td class="py-3 px-4 md:px-6 font-medium text-slate-900">Predsieň</td>
+              <td class="py-3 px-4 md:px-6 border-l border-slate-100 bg-emerald-50/20 font-semibold">8,00 m²</td>
+              <td class="py-3 px-4 md:px-6 border-l border-slate-100 font-semibold">9,30 m²</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="py-3 px-4 md:px-6 font-medium text-slate-900">Obývačka + kuchyňa</td>
+              <td class="py-3 px-4 md:px-6 border-l border-slate-100 bg-emerald-50/20 font-semibold">31,59 m²</td>
+              <td class="py-3 px-4 md:px-6 border-l border-slate-100 font-semibold">33,28 m²</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="py-3 px-4 md:px-6 font-medium text-slate-900">1. Spálňa</td>
+              <td class="py-3 px-4 md:px-6 border-l border-slate-100 bg-emerald-50/20 font-semibold">13,58 m²</td>
+              <td class="py-3 px-4 md:px-6 border-l border-slate-100 font-semibold">14,66 m²</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="py-3 px-4 md:px-6 font-medium text-slate-900">2. Spálňa</td>
+              <td class="py-3 px-4 md:px-6 border-l border-slate-100 bg-emerald-50/20 font-semibold">11,55 m²</td>
+              <td class="py-3 px-4 md:px-6 border-l border-slate-100 font-semibold">13,88 m²</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="py-3 px-4 md:px-6 font-medium text-slate-900">Kúpeľňa</td>
+              <td class="py-3 px-4 md:px-6 border-l border-slate-100 bg-emerald-50/20 font-semibold">7,52 m²</td>
+              <td class="py-3 px-4 md:px-6 border-l border-slate-100 font-semibold">7,16 m²</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="py-3 px-4 md:px-6 font-medium text-slate-900">Samostatné WC</td>
+              <td class="py-3 px-4 md:px-6 border-l border-slate-100 bg-emerald-50/20 font-semibold">1,53 m²</td>
+              <td class="py-3 px-4 md:px-6 border-l border-slate-100 font-semibold">1,97 m²</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="py-3 px-4 md:px-6 font-medium text-slate-900">Technická miestnosť</td>
+              <td class="py-3 px-4 md:px-6 border-l border-slate-100 bg-emerald-50/20 font-semibold">4,54 m²</td>
+              <td class="py-3 px-4 md:px-6 border-l border-slate-100 font-semibold">4,32 m²</td>
+            </tr>
+            <tr class="bg-emerald-50/60 font-bold text-slate-900 border-t-2 border-emerald-200">
+              <td class="py-3.5 px-4 md:px-6 text-emerald-950 font-black">Úžitková plocha bytu</td>
+              <td class="py-3.5 px-4 md:px-6 border-l border-slate-200 text-emerald-700 text-base font-black">78,31 m²</td>
+              <td class="py-3.5 px-4 md:px-6 border-l border-slate-200 text-slate-900 text-base font-black">84,57 m²</td>
+            </tr>
+            <tr class="hover:bg-slate-50 border-t border-slate-200">
+              <td class="py-3 px-4 md:px-6 font-medium text-slate-900">Terasa</td>
+              <td class="py-3 px-4 md:px-6 border-l border-slate-100 bg-emerald-50/20 font-semibold">14,80 m²</td>
+              <td class="py-3 px-4 md:px-6 border-l border-slate-100 font-semibold">14,80 m²</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="py-3 px-4 md:px-6 font-medium text-slate-900">Predzáhradka</td>
+              <td class="py-3 px-4 md:px-6 border-l border-slate-100 bg-emerald-50/20 text-emerald-800">V cene</td>
+              <td class="py-3 px-4 md:px-6 border-l border-slate-100 text-emerald-800">V cene</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="py-3 px-4 md:px-6 font-medium text-slate-900">Pivničná kobka</td>
+              <td class="py-3 px-4 md:px-6 border-l border-slate-100 bg-emerald-50/20 text-emerald-800">V cene</td>
+              <td class="py-3 px-4 md:px-6 border-l border-slate-100 text-emerald-800">V cene</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="py-3 px-4 md:px-6 font-medium text-slate-900">Parkovanie</td>
+              <td class="py-3 px-4 md:px-6 border-l border-slate-100 bg-emerald-50/20 font-bold text-slate-900">2 parkovacie miesta</td>
+              <td class="py-3 px-4 md:px-6 border-l border-slate-100 font-bold text-slate-900">2 parkovacie miesta</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technické prednosti stavby -->
+  <section class="py-12 max-w-6xl mx-auto px-4">
+    <h2 class="text-2xl font-bold text-slate-900 mb-6">Technický štandard a vybavenie stavby</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+        <i class="fa-solid fa-temperature-arrow-up text-emerald-600 text-2xl mb-3"></i>
+        <h3 class="font-bold text-slate-900 text-base mb-1">Vykurovanie</h3>
+        <p class="text-xs md:text-sm text-slate-600">Podlahové vykurovanie s úsporným tepelným čerpadlom, predpríprava na klimatizáciu.</p>
+      </div>
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+        <i class="fa-solid fa-border-all text-emerald-600 text-2xl mb-3"></i>
+        <h3 class="font-bold text-slate-900 text-base mb-1">Okná a tienenie</h3>
+        <p class="text-xs md:text-sm text-slate-600">Izolačné trojsklá a exteriérové elektrické žalúzie pre tepelný a zvukový komfort.</p>
+      </div>
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+        <i class="fa-solid fa-charging-station text-emerald-600 text-2xl mb-3"></i>
+        <h3 class="font-bold text-slate-900 text-base mb-1">Elektromobilita</h3>
+        <p class="text-xs md:text-sm text-slate-600">Pripravená infraštruktúra na inštaláciu nabíjacej stanice Wallbox pri parkovacích miestach.</p>
+      </div>
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+        <i class="fa-solid fa-car-side text-emerald-600 text-2xl mb-3"></i>
+        <h3 class="font-bold text-slate-900 text-base mb-1">Dostupnosť</h3>
+        <p class="text-xs md:text-sm text-slate-600">15 minút autom do Bratislavy bez ranných zápch, 45 minút letisko Schwechat a Viedeň.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Štandard na kľúč & Zákonné poplatky -->
+  <section id="standard" class="py-12 max-w-6xl mx-auto px-4 border-t border-slate-200">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      
+      <!-- Dokončenie na kľúč -->
+      <div class="bg-white p-6 md:p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+        <div>
+          <div class="inline-flex items-center space-x-2 text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full text-xs font-bold uppercase mb-4">
+            <i class="fa-solid fa-paint-roller"></i>
+            <span>Interiér na mieru</span>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Dokončenie do štandardu na kľúč</h3>
+          <p class="text-2xl font-black text-emerald-700 mb-3">cca 15 000 – 30 000 €</p>
+          <p class="text-xs text-slate-500 mb-5 leading-relaxed">
+            * Konečná cena záleží od vami zvoleného štandardu. Cena je uvedená orientačne.
+          </p>
+          
+          <ul class="space-y-3 text-sm text-slate-700">
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-check text-emerald-600"></i>
+              <span>Kvalitné podlahy a obvodové soklové lišty</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-check text-emerald-600"></i>
+              <span>Dlažby a keramické obklady podľa výberu</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-check text-emerald-600"></i>
+              <span>Kompletná sanita (vaňa / sprchový kút, batérie, toaleta)</span>
+            </li>
+            <li class="flex items-center space-x-3 text-slate-400">
+              <i class="fa-solid fa-circle-info text-slate-400"></i>
+              <span>Bez kuchynskej linky</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Zákonné poplatky -->
+      <div id="poplatky" class="bg-white p-6 md:p-8 rounded-2xl border border-slate-200 shadow-sm">
+        <div class="inline-flex items-center space-x-2 text-slate-700 bg-slate-100 px-3 py-1 rounded-full text-xs font-bold uppercase mb-4">
+          <i class="fa-solid fa-scale-balanced"></i>
+          <span>Legislatíva & Prevod</span>
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 mb-2">Zákonné poplatky pri kúpe v Rakúsku</h3>
+        <p class="text-sm text-slate-600 mb-4">K cene je nutné pripočítať <strong>cca 10 %</strong> zákonných poplatkov spojených s prevodom nehnuteľnosti:</p>
+
+        <ul class="space-y-3 text-sm text-slate-700">
+          <li class="flex items-start space-x-3">
+            <i class="fa-solid fa-file-invoice-dollar text-emerald-600 mt-1"></i>
+            <div>
+              <strong>Daň z nadobudnutia nehnuteľnosti</strong>
+              <span class="block text-xs text-slate-500">Grunderwerbsteuer (3,5 %)</span>
+            </div>
+          </li>
+          <li class="flex items-start space-x-3">
+            <i class="fa-solid fa-landmark text-emerald-600 mt-1"></i>
+            <div>
+              <strong>Poplatok za zápis do katastra nehnuteľností</strong>
+              <span class="block text-xs text-slate-500">Eintragungsgebühr (1,1 %)</span>
+            </div>
+          </li>
+          <li class="flex items-start space-x-3">
+            <i class="fa-solid fa-stamp text-emerald-600 mt-1"></i>
+            <div>
+              <strong>Notársky a právny servis</strong>
+              <span class="block text-xs text-slate-500">Vypracovanie kúpnej zmluvy a vinkulácia</span>
+            </div>
+          </li>
+          <li class="flex items-start space-x-3">
+            <i class="fa-solid fa-handshake text-emerald-600 mt-1"></i>
+            <div>
+              <strong>Provízia realitnej kancelárie</strong>
+              <span class="block text-xs text-slate-500">Vrátane DPH</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Banner hypotekárneho financovania -->
+    <div class="mt-8 bg-slate-900 text-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-800">
+      <div class="md:flex items-center justify-between gap-6">
+        <div>
+          <span class="text-emerald-400 text-xs font-bold tracking-wider uppercase">Cezhraničné financovanie</span>
+          <h4 class="text-xl md:text-2xl font-bold mt-1">Kúpu je možné financovať hypotekárnym úverom</h4>
+          <p class="text-sm text-slate-300 mt-2 max-w-2xl leading-relaxed">
+            S cezhraničným financovaním a celou rakúskou administratívou Vám ochotne pomôžu naši špecialisti.
+          </p>
+        </div>
+        <a href="#kontakt" class="mt-4 md:mt-0 inline-block bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold px-6 py-3 rounded-xl transition flex-shrink-0">
+          Konzultovať financovanie
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt & Obhliadka -->
+  <section id="kontakt" class="py-14 bg-slate-900 text-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        
+        <!-- Senior Realitný Maklér -->
+        <div>
+          <span class="text-emerald-400 text-xs font-bold tracking-widest uppercase">Osobná obhliadka</span>
+          <h2 class="text-3xl font-black mt-2 mb-4">Dohodnite si termín priamo v Edelstale</h2>
+          <p class="text-slate-300 text-sm leading-relaxed mb-8">
+            Prevedieme vás pozemkom, ukážeme presnú orientáciu bytov, kvalitu stavby a podrobne preberieme možnosti financovania.
+          </p>
+
+          <div class="bg-slate-800/90 p-6 rounded-2xl border border-slate-700">
+            <div class="flex items-center space-x-4">
+              <div class="w-14 h-14 rounded-full bg-emerald-600/20 text-emerald-400 flex items-center justify-center text-xl font-black border border-emerald-500/30">
+                MK
+              </div>
+              <div>
+                <h3 class="font-bold text-lg text-white">Miroslav Kadnár</h3>
+                <p class="text-xs text-emerald-400 font-semibold tracking-wide uppercase">Senior Realitný Maklér</p>
+                <p class="text-xs text-slate-400">Metrixreal s.r.o.</p>
+              </div>
+            </div>
+
+            <div class="mt-6 space-y-3.5 text-sm">
+              <div class="flex items-center space-x-3 text-slate-300">
+                <i class="fa-solid fa-phone text-emerald-400 w-5"></i>
+                <a href="tel:+421951778117" class="hover:text-white font-medium">+421 951 778 117</a>
+              </div>
+              <div class="flex items-center space-x-3 text-slate-300">
+                <i class="fa-solid fa-envelope text-emerald-400 w-5"></i>
+                <a href="mailto:kadnar@metrixreal.sk" class="hover:text-white">kadnar@metrixreal.sk</a>
+              </div>
+              <div class="flex items-start space-x-3 text-slate-300">
+                <i class="fa-solid fa-location-dot text-emerald-400 w-5 mt-1"></i>
+                <div>
+                  <span class="font-semibold block text-white">Kde nás nájdete:</span>
+                  <span>Drieňová 34, 821 02 Bratislava – Ružinov</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-6 border-t border-slate-700 flex flex-col sm:flex-row gap-3">
+              <a href="https://wa.me/421951778117?text=Dobry%20den,%20chcem%20sa%20spytat%20na%20byty%20v%20Edelstale" 
+                 target="_blank" 
+                 class="flex-1 inline-flex items-center justify-center space-x-2 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-2.5 px-4 rounded-xl transition text-sm">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Napísať na WhatsApp</span>
+              </a>
+              <a href="tel:+421951778117" 
+                 class="inline-flex items-center justify-center space-x-2 bg-slate-700 hover:bg-slate-600 text-white font-semibold py-2.5 px-4 rounded-xl transition text-sm">
+                <i class="fa-solid fa-phone"></i>
+                <span>Zavolať</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulár -->
+        <div class="bg-white text-slate-900 p-8 rounded-2xl shadow-xl">
+          <h3 class="text-xl font-bold mb-1">Rezervácia termínu</h3>
+          <p class="text-xs text-slate-500 mb-6">Vyplňte kontaktné údaje a pán Kadnár vás bude obratom kontaktovať.</p>
+          
+          <form id="viewingForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Mám záujem o:</label>
+              <select class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+                <option value="1. Byt (78,31 m²)">1. Byt (Úžitková plocha 78,31 m²)</option>
+                <option value="2. Byt (84,57 m²)">2. Byt (Úžitková plocha 84,57 m²)</option>
+                <option value="Oba byty">Chcem vidieť oba byty</option>
+              </select>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Meno a Priezvisko</label>
+                <input type="text" required placeholder="Ján Novák" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Telefónne číslo</label>
+                <input type="tel" required placeholder="+421 9..." class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Preferovaný termín</label>
+              <input type="date" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Poznámka / Otázka (voliteľné)</label>
+              <textarea rows="2" placeholder="Zaujíma ma financovanie / klientske zmeny..." class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none"></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded-lg shadow-md hover:shadow-lg transition text-sm">
+              Odoslať požiadavku
+            </button>
+            <p id="formStatus" class="hidden text-xs text-center text-emerald-600 font-semibold mt-2">Ďakujeme! Vašu požiadavku sme zaznamenali.</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Pätička -->
+  <footer class="bg-slate-950 text-slate-500 py-6 text-xs text-center border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-4">
+      <p>© 2026 Metrixreal s.r.o. · Drieňová 34, 821 02 Bratislava – Ružinov. Všetky práva vyhradené.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox Slider (усі 10 файлів) -->
+  <div id="galleryModal" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-sm hidden flex flex-col justify-between p-4 md:p-6" onclick="closeGallery()">
+    <div class="flex items-center justify-between text-white w-full max-w-6xl mx-auto" onclick="event.stopPropagation()">
+      <span id="galleryCounter" class="text-sm font-semibold text-slate-300 bg-white/10 px-3 py-1 rounded-full">1 / 10</span>
+      <button class="text-white hover:text-emerald-400 text-2xl transition p-2" onclick="closeGallery()">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="relative flex items-center justify-center flex-1 my-auto max-w-6xl w-full mx-auto" onclick="event.stopPropagation()">
+      <button class="absolute left-2 md:left-4 z-10 bg-black/50 hover:bg-emerald-600 text-white w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center transition shadow-lg" onclick="prevImage()">
+        <i class="fa-solid fa-chevron-left text-lg"></i>
+      </button>
+
+      <img id="activeGalleryImage" src="" alt="Galéria" class="max-w-full max-h-[78vh] object-contain rounded-xl shadow-2xl transition duration-200">
+
+      <button class="absolute right-2 md:right-4 z-10 bg-black/50 hover:bg-emerald-600 text-white w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center transition shadow-lg" onclick="nextImage()">
+        <i class="fa-solid fa-chevron-right text-lg"></i>
+      </button>
+    </div>
+
+    <div class="text-center text-xs text-slate-400" onclick="event.stopPropagation()">
+      Môžete použiť aj šípky na klávesnici (← / →) alebo klávesu Esc
+    </div>
+  </div>
+
+  <script>
+    // Масив з точними розширеннями файлів з вашої папки:
+    const galleryImages = [
+      'exterier.jpg',
+      'vykres.png',
+      'obyvacka1.png',
+      'kitchen.png',
+      'bath1.png',
+      'obyvacka2.png',
+      'obyvacka3.png',
+      'TV1.png',
+      'bath2.png',
+      'bath3.png'
+    ];
+
+    let currentIdx = 0;
+
+    function openGallery(index) {
+      currentIdx = index;
+      updateGalleryView();
+      document.getElementById('galleryModal').classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+    }
+
+    function closeGallery() {
+      document.getElementById('galleryModal').classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    function updateGalleryView() {
+      const img = document.getElementById('activeGalleryImage');
+      const counter = document.getElementById('galleryCounter');
+      img.src = galleryImages[currentIdx];
+      counter.innerText = (currentIdx + 1) + ' / ' + galleryImages.length;
+    }
+
+    function nextImage() {
+      currentIdx = (currentIdx + 1) % galleryImages.length;
+      updateGalleryView();
+    }
+
+    function prevImage() {
+      currentIdx = (currentIdx - 1 + galleryImages.length) % galleryImages.length;
+      updateGalleryView();
+    }
+
+    document.addEventListener('keydown', function(e) {
+      const modal = document.getElementById('galleryModal');
+      if (!modal.classList.contains('hidden')) {
+        if (e.key === 'ArrowRight') nextImage();
+        if (e.key === 'ArrowLeft') prevImage();
+        if (e.key === 'Escape') closeGallery();
+      }
+    });
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      document.getElementById('formStatus').classList.remove('hidden');
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>

@@ -85,7 +85,7 @@
     </div>
   </section>
 
-  <!-- Fotogaléria з точними розширеннями файлів -->
+  <!-- Fotogaléria -->
   <section id="galeria" class="py-10 max-w-6xl mx-auto px-4">
     <div class="flex items-end justify-between mb-4">
       <div>
@@ -98,29 +98,29 @@
       </button>
     </div>
 
-    <!-- Розкладка колажу -->
+    <!-- Rozkladka koláže -->
     <div class="grid grid-cols-1 md:grid-cols-4 gap-3 h-[420px] md:h-[480px]">
       
-      <!-- 1. Фасад (exterier.jpg) -->
+      <!-- 1. Fasáda (exterier.jpg) -->
       <div class="md:col-span-2 relative h-full rounded-2xl overflow-hidden cursor-pointer group shadow-sm border border-slate-200" onclick="openGallery(0)">
         <img src="exterier.jpg" alt="Exteriér domu" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
         <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition"></div>
       </div>
 
-      <!-- 2. Креслення проєкту (vykres.png) -->
+      <!-- 2. Pôdorys (vykres.png) -->
       <div class="relative h-full rounded-2xl overflow-hidden cursor-pointer group shadow-sm border border-slate-200 bg-white" onclick="openGallery(1)">
         <img src="vykres.png" alt="Pôdorys stavby" class="w-full h-full object-contain p-2 group-hover:scale-105 transition duration-500">
         <span class="absolute bottom-2.5 left-2.5 bg-slate-900/80 text-white text-[11px] font-medium px-2.5 py-1 rounded-md">Pôdorys</span>
       </div>
 
-      <!-- Правий стовпчик -->
+      <!-- Pravý stĺpec -->
       <div class="grid grid-rows-2 gap-3 h-full">
-        <!-- 3. Вітальня (obyvacka1.png) -->
+        <!-- 3. Obývačka (obyvacka1.png) -->
         <div class="relative h-full rounded-2xl overflow-hidden cursor-pointer group shadow-sm border border-slate-200" onclick="openGallery(2)">
           <img src="obyvacka1.png" alt="Obývacia izba" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
         </div>
 
-        <!-- 4. Ванна (bath1.png) з плашкою для відкриття інших фото -->
+        <!-- 4. Kúpeľňa (bath1.png) -->
         <div class="relative h-full rounded-2xl overflow-hidden cursor-pointer group shadow-sm border border-slate-200" onclick="openGallery(4)">
           <img src="bath1.png" alt="Kúpeľňa" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           <div class="absolute inset-0 bg-slate-900/50 group-hover:bg-slate-900/60 transition flex flex-col items-center justify-center text-white p-2 text-center">
@@ -139,7 +139,7 @@
     </button>
   </section>
 
-  <!-- Таблиця параметрів двох квартир -->
+  <!-- Tabuľka výmer dvoch bytov -->
   <section id="tabulky" class="py-12 bg-white border-y border-slate-200">
     <div class="max-w-6xl mx-auto px-4">
       <div class="text-center max-w-2xl mx-auto mb-8">
@@ -411,15 +411,20 @@
           </div>
         </div>
 
-        <!-- Formulár -->
+        <!-- Formulár: FormSubmit priamo na e-mail -->
         <div class="bg-white text-slate-900 p-8 rounded-2xl shadow-xl">
           <h3 class="text-xl font-bold mb-1">Rezervácia termínu</h3>
           <p class="text-xs text-slate-500 mb-6">Vyplňte kontaktné údaje a pán Kadnár vás bude obratom kontaktovať.</p>
           
-          <form id="viewingForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+          <form action="https://formsubmit.co/kadnar@metrixreal.sk" method="POST" class="space-y-4">
+            <!-- FormSubmit nastavenia -->
+            <input type="hidden" name="_subject" value="Nová žiadosť o obhliadku - Edelstal">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+
             <div>
               <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Mám záujem o:</label>
-              <select class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+              <select name="Byt" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none">
                 <option value="1. Byt (78,31 m²)">1. Byt (Úžitková plocha 78,31 m²)</option>
                 <option value="2. Byt (84,57 m²)">2. Byt (Úžitková plocha 84,57 m²)</option>
                 <option value="Oba byty">Chcem vidieť oba byty</option>
@@ -429,28 +434,27 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Meno a Priezvisko</label>
-                <input type="text" required placeholder="Ján Novák" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+                <input type="text" name="Meno" required placeholder="Ján Novák" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none">
               </div>
               <div>
                 <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Telefónne číslo</label>
-                <input type="tel" required placeholder="+421 9..." class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+                <input type="tel" name="Telefon" required placeholder="+421 9..." class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none">
               </div>
             </div>
 
             <div>
               <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Preferovaný termín</label>
-              <input type="date" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+              <input type="text" name="Termin" placeholder="DD.MM.RRRR (napr. 28.10.2026)" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none">
             </div>
 
             <div>
               <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Poznámka / Otázka (voliteľné)</label>
-              <textarea rows="2" placeholder="Zaujíma ma financovanie / klientske zmeny..." class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none"></textarea>
+              <textarea name="Poznamka" rows="2" placeholder="Zaujíma ma financovanie / klientske zmeny..." class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none"></textarea>
             </div>
 
             <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded-lg shadow-md hover:shadow-lg transition text-sm">
               Odoslať požiadavku
             </button>
-            <p id="formStatus" class="hidden text-xs text-center text-emerald-600 font-semibold mt-2">Ďakujeme! Vašu požiadavku sme zaznamenali.</p>
           </form>
         </div>
 
@@ -465,7 +469,7 @@
     </div>
   </footer>
 
-  <!-- Lightbox Slider (усі 10 файлів) -->
+  <!-- Lightbox Slider (všetkých 10 súborov) -->
   <div id="galleryModal" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-sm hidden flex flex-col justify-between p-4 md:p-6" onclick="closeGallery()">
     <div class="flex items-center justify-between text-white w-full max-w-6xl mx-auto" onclick="event.stopPropagation()">
       <span id="galleryCounter" class="text-sm font-semibold text-slate-300 bg-white/10 px-3 py-1 rounded-full">1 / 10</span>
@@ -492,7 +496,6 @@
   </div>
 
   <script>
-    // Масив з точними розширеннями файлів з вашої папки:
     const galleryImages = [
       'exterier.jpg',
       'vykres.png',
@@ -545,12 +548,6 @@
         if (e.key === 'Escape') closeGallery();
       }
     });
-
-    function handleFormSubmit(e) {
-      e.preventDefault();
-      document.getElementById('formStatus').classList.remove('hidden');
-      e.target.reset();
-    }
   </script>
 </body>
 </html>
